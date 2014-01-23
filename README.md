@@ -6,3 +6,7 @@ Fundamentally this distribution relies and integrates extensively with the WET-B
 
 Development has been tailored for organizations that need to comply with standards for accessibility and bilingualism or that simply need a deployment based distribution that allows them to get up and running quickly using a carefully curated selection of modules that can support common enterprise business requirements. Specific information about how to work with this distribution can be found here: [Wiki Documentation](http://wiki.drupalwxt.org/)
 
+## Credentials (passwords set at first boot)
+
+Webmin, SSH, MySQL, phpMyAdmin: username root
+Drupal 7: username admin
