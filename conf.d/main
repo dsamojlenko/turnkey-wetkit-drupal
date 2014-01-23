@@ -17,7 +17,7 @@ WEBROOT=/var/www/wetkit
 sed -i "s|^memory_limit.*|memory_limit = 128M|" /etc/php5/cli/php.ini
 
 # increase php memory limit (for drupal)
-sed -i "s|^memory_limit.*|memory_limit = 256|" /etc/php5/apache2/php.ini
+sed -i "s|^memory_limit.*|memory_limit = 256M|" /etc/php5/apache2/php.ini
 
 # install drush and configure
 pear channel-discover pear.drush.org
