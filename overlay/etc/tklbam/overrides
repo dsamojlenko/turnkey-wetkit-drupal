@@ -1,0 +1,11 @@
+-mysql:wetkit/sessions
+-mysql:wetkit/cache
+-mysql:wetkit/cache_filter
+-mysql:wetkit/cache_menu
+-mysql:wetkit/cache_page
+-mysql:wetkit/cache_views
+-mysql:wetkit/devel_queries
+-mysql:wetkit/devel_times
+-mysql:wetkit/search_dataset
+-mysql:wetkit/search_index
+-mysql:wetkit/search_total
