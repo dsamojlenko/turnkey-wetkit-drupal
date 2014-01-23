@@ -21,6 +21,7 @@ Development has been tailored for organizations that need to comply with standar
 ## Credentials (passwords set at first boot)
 
 Webmin, SSH, MySQL, phpMyAdmin: username root
+
 Drupal 7: username admin
 
 WARNING: When selecting a Drupal admin password, be sure to use one that meets the password policy for WET:
