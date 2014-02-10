@@ -6,3 +6,5 @@ php-pear            /* used for drush */
 php5-gd
 libssh2-php         /* support inline updates */
 
+patch				/* needed if we end up reinstalling wetkit or installing a second wetkit using drush */
+
