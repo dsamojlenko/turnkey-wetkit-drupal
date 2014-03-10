@@ -31,11 +31,11 @@ cat > /etc/drush/drushrc.php << EOF
 EOF
 
 # download latest wetkit release
-wget -O /tmp/wetkit.tar.gz http://ftp.drupal.org/files/projects/wetkit-7.x-1.2-core.tar.gz
+wget -O /tmp/wetkit-7.x-1.3-core.tar.gz http://ftp.drupal.org/files/projects/wetkit-7.x-1.3-core.tar.gz
 
 # untar and move to web root
-tar -zxvf /tmp/wetkit.tar.gz -C $(dirname $WEBROOT)
-mv $(dirname $WEBROOT)/wetkit-7.x-1.2 $WEBROOT
+tar -zxvf /tmp/wetkit-7.x-1.3-core.tar.gz -C $(dirname $WEBROOT)
+mv $(dirname $WEBROOT)/wetkit-7.x-1.3 $WEBROOT
 
 # create default settings file
 SETTINGS=$WEBROOT/sites/default/settings.php
