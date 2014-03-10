@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"""Set Drupal7 admin password and email
+"""Set Wetkit admin password and email
 
 Option:
     --pass=     unless provided, will ask interactively
@@ -50,13 +50,13 @@ def main():
             d = Dialog('TurnKey Linux - First boot configuration')
 
         email = d.get_email(
-            "Drupal7 Email",
-            "Enter email address for the Drupal7 'admin' account.",
+            "Wetkit Email",
+            "Enter email address for the Wetkit 'admin' account.",
             "admin@example.com")
 
     m = MySQL()
-    m.execute('UPDATE drupal7.users SET mail=\"%s\" WHERE name=\"admin\";' % email)
-    m.execute('UPDATE drupal7.users SET init=\"%s\" WHERE name=\"admin\";' % email)
+    m.execute('UPDATE wetkit.users SET mail=\"%s\" WHERE name=\"admin\";' % email)
+    m.execute('UPDATE wetkit.users SET init=\"%s\" WHERE name=\"admin\";' % email)
     system("/usr/bin/drush variable-set site_mail %s" % email)
     system("/usr/bin/drush variable-set update_notify_emails %s" % email)
     system("/usr/bin/drush user-password admin --password='%s'" % password)
