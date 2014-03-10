@@ -14,7 +14,7 @@ NameVirtualHost *:443
     DocumentRoot /var/www/wetkit/
 </VirtualHost>
 
-<Directory /var/www/drupal7/>
+<Directory /var/www/wetkit/>
     Options +FollowSymLinks
     AllowOverride All
     order allow,deny
