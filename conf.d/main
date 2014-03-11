@@ -102,4 +102,4 @@ a2enmod rewrite
 # unset proxy settings
 unset HTTP_PROXY
 
-rm -r /etc/drush
+# rm -r /etc/drush
