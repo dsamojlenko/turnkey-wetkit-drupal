@@ -60,7 +60,8 @@ def main():
     system("/usr/bin/drush variable-set site_mail %s" % email)
     system("/usr/bin/drush variable-set update_notify_emails %s" % email)
     system("/usr/bin/drush user-password admin --password='%s'" % password)
-
+	
+	system("rm -r /etc/drush")
 if __name__ == "__main__":
     main()
 
