@@ -1,4 +1,4 @@
-## Web Experience Toolkit Drupal
+## Turnkey Wetkit Drupal
 
 This is a build profile for a Turnkey Linux appliance.  To build it, use [TKLDev](https://github.com/turnkeylinux-apps/tkldev) to generate an ISO that can be installed on VirtualBox or the virtualization environment of choice.
 
