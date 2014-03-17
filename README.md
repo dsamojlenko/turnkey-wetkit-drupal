@@ -8,15 +8,6 @@ The [Drupal WxT distribution](https://github.com/wet-boew/wet-boew-drupal) is a 
 
 Development has been tailored for organizations that need to comply with standards for accessibility and bilingualism or that simply need a distribution that allows them to get up and running quickly using a carefully curated selection of modules that can support common enterprise business requirements.
 
-
-## Benefits
-* Provides reusable components for building and maintaining innovative Web sites.
-* Respects accessibility [WCAG 2.0 AA](http://www.w3.org/TR/WCAG20/) and [WAI-ARIA](http://www.w3.org/TR/wai-aria/), usability, and interoperability
-* Reduces costs by consolidating Web tools and solutions.
-* Open source software that is free to use by departments and external Web communities.
-* Responsive design (based on Omega) - mobile, tablet and desktop support
-* Ever-growing list of open source plugins and widgets leverage through CTools Plugins.
-
 ## Credentials (passwords set at first boot)
 
 Webmin, SSH, MySQL, phpMyAdmin: username root
