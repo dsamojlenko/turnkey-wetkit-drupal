@@ -8,7 +8,6 @@ ADMIN_NAME=admin
 ADMIN_PASS=WetKit@2013
 
 WEBROOT=/var/www/wetkit
-WETKIT_RELEASE=wetkit-7.x-1.4
 
 # set proxy settings
 [ "$FAB_HTTP_PROXY" ] && export HTTP_PROXY=$FAB_HTTP_PROXY
@@ -24,11 +23,10 @@ pear channel-discover pear.drush.org
 pear install drush/drush
 
 # download latest wetkit release
-wget -O /tmp/${WETKIT_RELEASE}-core.tar.gz http://ftp.drupal.org/files/projects/${WETKIT_RELEASE}-core.tar.gz
+drush dl wetkit --drupal-project-rename=wetkit --destination=/tmp
 
-# untar and move to web root
-tar -zxvf /tmp/${WETKIT_RELEASE}-core.tar.gz -C $(dirname $WEBROOT)
-mv $(dirname $WEBROOT)/${WETKIT_RELEASE} $WEBROOT
+# move to web root
+mv /tmp/wetkit $WEBROOT
 
 # create default settings file
 SETTINGS=$WEBROOT/sites/default/settings.php
