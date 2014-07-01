@@ -14,7 +14,7 @@ WETKIT_RELEASE=wetkit-7.x-1.4
 [ "$FAB_HTTP_PROXY" ] && export HTTP_PROXY=$FAB_HTTP_PROXY
 
 # increase php cli memory limit (for drush)
-sed -i "s|^memory_limit.*|memory_limit = 128M|" /etc/php5/cli/php.ini
+sed -i "s|^memory_limit.*|memory_limit = 256M|" /etc/php5/cli/php.ini
 
 # increase php memory limit (for drupal)
 sed -i "s|^memory_limit.*|memory_limit = 256M|" /etc/php5/apache2/php.ini
