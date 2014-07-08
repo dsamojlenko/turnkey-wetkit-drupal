@@ -43,7 +43,8 @@ def main():
         d = Dialog('TurnKey Linux - First boot configuration')
         password = d.get_password(
             "Wetkit Password",
-            "Enter new password for the Wetkit 'admin' account.  Be sure that it meets the password policy for WET: must contain one each of lowercase, uppercase, digit;  must be at least 8 characters in length;  must contain at least 2 letters.")
+            "Enter new password for the Wetkit 'admin' account.  Be sure that it meets the password policy for WET: must contain one each of lowercase, uppercase, digit;  must be at least 8 characters in length;  must contain at least 2 letters.",
+            "^(?=(.*\d){2})(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).{8,}$")
 
     if not email:
         if 'd' not in locals():
